@@ -1,0 +1,44 @@
+* {
+  /* thay doi phong chu */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* khong lan */
+  overflow: hidden;
+}
+
+main {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  /* doi bo cuc main */
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.avatar {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar img:hover {
+  transform: scale(1.1);
+}
