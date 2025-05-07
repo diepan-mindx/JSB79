@@ -1,0 +1,55 @@
+body {
+  height: 500vh;
+}
+
+button {
+  padding: 15px 40px;
+  font-size: larger;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(202, 160, 241);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: purple;
+  color: white;
+}
+
+/* position------------------------ */
+#static {
+  position: static;
+  /* khong thay doi duoc vi tri */
+  top: 100px;
+  left: 100px;
+}
+
+#relative {
+  position: relative;
+  /* co the thay doi duoc vi tri */
+  top: 100px;
+  left: 100px;
+}
+
+#absolute {
+  position: absolute;
+  /* nam chong len + khac vi tri so voi relative */
+  top: 100px;
+  left: 100px;
+}
+
+#fixed {
+  position: fixed;
+  /* mat khoang trong cho element */
+  right: 100px;
+  bottom: 100px;
+}
+
+#sticky {
+  position: sticky;
+  /* co the thay doi duoc vi tri */
+  top: 300px;
+}

@@ -10,6 +10,45 @@ body {
   overflow: hidden;
 }
 
+header {
+  nav {
+    display: flex;
+    /* chinh can bang theo chieu doc */
+    justify-content: space-around;
+    /* chinh chieu ngang */
+    align-items: center;
+    .logo {
+      font-size: larger;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      /* don content vao cuoi hang */
+      justify-content: end;
+      align-items: center;
+      /* mat dau cham tron */
+      list-style: none;
+      /* in hoa chu */
+      text-transform: uppercase;
+      /* khoang cach cac link */
+      column-gap: 20px;
+    }
+  }
+}
+
+header .nav-item-link a {
+  /* bo duong ke duoi */
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+
+header .nav-item-link a:hover {
+  text-decoration: wavy underline;
+}
+
 main {
   background: #eeaeca;
   background: radial-gradient(
@@ -41,4 +80,50 @@ main {
 
 .avatar img:hover {
   transform: scale(1.1);
+}
+
+.info {
+  /* cach ben trai mot khoang */
+  margin-left: 30px;
+  width: 500px;
+  .title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .title:hover {
+    color: blueviolet;
+    transform: translateY(-10px) scale(1.1);
+  }
+
+  .subtext {
+    /* in nghieng */
+    font-style: italic;
+  }
+
+  .social-list {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    column-gap: 20px;
+    li {
+      /* ve thanh button */
+      padding: 20px 30px;
+      border-radius: 10px;
+      background-color: pink;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+      }
+    }
+    li:hover{
+      background-color: aqua;
+    }
+  }
 }
