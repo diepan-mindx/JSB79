@@ -12,6 +12,13 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -83,27 +90,155 @@
       <!-- services -->
       <section id="services" class="row w-100">
         <div class="col-lg-4 col-sm-12 text-center">
-          <i></i>
+          <i class="fa-solid fa-circle-check"></i>
           <h3>Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p>
         </div>
 
         <div class="col-lg-4 col-sm-12 text-center">
-          <i></i>
+          <i class="fa-solid fa-heart"></i>
           <h3>Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p>
         </div>
 
         <div class="col-lg-4 col-sm-12 text-center">
-          <i></i>
+          <i class="fa-solid fa-bullseye"></i>
           <h3>Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p>
         </div>
       </section>
 
-      <!-- carousel -->
+      <!-- comments -->
+      <section id="comments">
+        <!-- carousel (copy tu bootstrap) -->
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h1 class="comment">
+                I no longer have to sniff other dogs for love. I've found the
+                hottest Corgi on DogSocial. Woof.
+              </h1>
+              <div
+                class="comment-info d-flex justity-content-center align-items-center gap-2 w-100"
+              >
+                <img
+                  class="comment-ava rounded-circle"
+                  src="https://petservicehcm.com/wp-content/uploads/2024/08/kinh-nghiem-nuoi-cho-golden-retriever-2.jpg"
+                  alt=""
+                />
+                <p class="fw-bolder fst-italic">Pebbles, New York</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <h1 class="comment">
+                My dog used to be so lonely, but with DogSocial's help, they've
+                found the love of their life. I think.
+              </h1>
+              <div
+                class="comment-info d-flex justity-content-center align-items-center gap-2 w-100"
+              >
+                <img
+                  class="comment-ava rounded-circle"
+                  src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+                  alt=""
+                />
+                <p class="fw-bolder fst-italic">Mewww, Hokaido</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- danh sach hang tai tro -->
+        <div
+          class="brands d-flex flex-nowrap justify-content-center align-items-center gap-3 w-100"
+        >
+          <img
+            class="img-fluid"
+            src="https://upload.wikimedia.org/wikipedia/fr/a/ad/The_Next_Web_Logo.png"
+            alt=""
+          />
+          <img
+            class="img-fluid"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mashable_Logo.svg/2560px-Mashable_Logo.svg.png"
+            alt=""
+          />
+          <img
+            class="img-fluid"
+            src="https://upload.wikimedia.org/wikipedia/commons/1/18/Business_Insider_2023_logo.svg"
+            alt=""
+          />
+        </div>
+      </section>
 
       <!-- pricing -->
+      <section id="pricing">
+        <!-- title -->
+        <h3 class="fw-bolder">A Plan for Every Dog</h3>
+        <!-- subtitle -->
+        <p class="text-secondary">
+          Simple and affordable price for you and your dog.
+        </p>
+
+        <!-- danh sach gia tien (card-pricing) -->
+        <div class="pricing-list row justify-content-center align-items-center text-center">
+          
+          <div class="pricing-card col-lg-4 col-sm-12">
+            <h3 class="pricing-card-title fw-bolder">Chihuahua</h3>
+            <div class="pricing-card-info">
+              <h1 class="fw-bolder">Free</h1>
+              <p class="text-secondary fw-bold">5 Matches Per Day</p>
+              <p class="text-secondary fw-bold">10 Messages Per Day</p>
+              <p class="text-secondary fw-bold">Unlimited App Usage</p>
+            </div>
+            <button class="btn btn-light border border-dark fw-bolder">Sign Up</button>
+          </div>
+
+          <div class="pricing-card col-lg-4 col-sm-12">
+            <h3 class="pricing-card-title fw-bolder">Chihuahua</h3>
+            <div class="pricing-card-info">
+              <h1 class="fw-bolder">$49 / mo</h1>
+              <p class="text-secondary fw-bold">5 Matches Per Day</p>
+              <p class="text-secondary fw-bold">10 Messages Per Day</p>
+              <p class="text-secondary fw-bold">Unlimited App Usage</p>
+            </div>
+            <button class="btn btn-dark border border-dark fw-bolder">Sign Up</button>
+          </div>
+
+          <div class="pricing-card col-lg-4 col-sm-12">
+            <h3 class="pricing-card-title fw-bolder">Chihuahua</h3>
+            <div class="pricing-card-info">
+              <h1 class="fw-bolder">Free</h1>
+              <p class="text-secondary fw-bold">5 Matches Per Day</p>
+              <p class="text-secondary fw-bold">10 Messages Per Day</p>
+              <p class="text-secondary fw-bold">Unlimited App Usage</p>
+            </div>
+            <button class="btn btn-dark border border-dark fw-bolder">Sign Up</button>
+          </div>
+        </div>
+      </section>
 
       <!-- download -->
     </main>
