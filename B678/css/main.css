@@ -1,0 +1,142 @@
+/* dat bien cho css */
+:root {
+  --colored-bg: #c599b6;
+  --colored-text: white;
+  --padding-section: 30px 100px;
+  --margin-section: 100px 0;
+}
+
+.colored {
+  background-color: var(--colored-bg);
+  color: var(--colored-text);
+  nav {
+    background-color: var(--colored-bg);
+    a,
+    button {
+      color: var(--colored-text);
+    }
+  }
+}
+
+#banner,
+#services,
+#comments,
+#pricing,
+#download,
+footer {
+  padding: var(--padding-section);
+  margin: var(--margin-section);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#comments h1,
+#download h1 {
+  text-align: center;
+  line-height: 80px;
+  padding: 30px;
+}
+
+/* banner */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  nav {
+    width: 100%;
+  }
+}
+#banner {
+  min-height: 400px;
+  width: 100%;
+}
+#banner img {
+  width: 350px;
+  position: absolute;
+  rotate: 20deg;
+  border-radius: 30px;
+  left: 50%;
+}
+
+/* main */
+main {
+  background-color: white;
+  position: relative;
+  z-index: 1000;
+}
+/* services */
+#services {
+  margin-top: 0;
+  padding-top: 100px;
+  i {
+    font-size: 60px;
+    color: var(--colored-bg);
+    margin-top: 30px;
+  }
+}
+
+#services div i:nth-child(2),
+.rotate {
+  animation: rotate 1s infinite linear;
+}
+
+/* comments */
+#comments {
+  #carouselExampleAutoplaying {
+    width: 100%;
+    min-height: 500px;
+  }
+  .comment {
+    font-size: 60px;
+    font-family: Impact, "Arial Narrow Bold", sans-serif, Helvetica, sans-serif;
+  }
+  .comment-ava {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .brands {
+    margin: 30px 0;
+    img {
+      max-width: 250px;
+    }
+  }
+}
+
+/* keyframe */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+  #banner,
+  #services,
+  #comments,
+  #pricing,
+  #download,
+  footer {
+    padding: 20px;
+    margin: 50px 0;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+  #banner img {
+    position: static;
+    rotate: 0deg;
+    margin-top: 30px;
+  }
+}
